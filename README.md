@@ -1,8 +1,8 @@
 <p align="center"><img width=27% src="https://github.com/juliajessica/template-webpack-karma/blob/master/media/epicodus_logo.png"></p>
 
-# _<p align="center">Julia Sheremet</p>_
+# _<p align="center">Super Galactic Age Calculator</p>_
 
-#### _<p align="center">Assignment for Epicodus</p>_
+#### _<p align="center">Test Driven Development Assignment for Epicodus</p>_
 
 #### _**<p align="center">By: Julia Sheremet</p>**_
 
@@ -13,8 +13,7 @@
 
 ## <span style="color:#74875d;">Description</span>
 
-_This webpage application is designed to...._
-
+_This webpage application is designed to determines a user’s age based on a planet’s solar years. The primary focus of this webpage is to focus on thoroughly testing each piece of functionality._
 
 _This project uses Webpack to bundle and minify the code. The test runner is Karma and the syntax flavor is Jasmine. Babel is used to transpile ES6. All dependencies required are included in this project._
 
@@ -91,8 +90,25 @@ _Feel free to email me at [juliajessicasher@gmail.com](mailto:juliajessicasher@g
 ### <span style="color:#74875d;">Specs</span>
 | Behavior | Input | Output |
 | :-------------     | :------------- | :------------- |
-| The program will  | Input: "" | Output:  |
+| The program will return a person’s age | Input: 25 | Output: 25 |
+| The program will take a person’s age in years and convert it into seconds. | Input: 25 | Output: 7.884e+8 |
+| The program will return the seconds based on a selected date | Input: 06/07/1993 | Output: X Seconds |
+| The program will take two dates and determine the difference in seconds, between the two. | Input: 06/07/1993 and 06/07/2030 | Output: X Seconds |
+| The program will return the age of a human in Mercury years. | Input: 24 | Output: X Mercury Years |
+| The program will return the age of a human in Venus years | Input: 24 | Output: X Venus Years |
+| The program will return the age of a human in Mars years. | Input: 24 | Output: X Mars Years |
+| The program will return the age of a human in Jupiter years | Input: 24 | Output: X Jupiter Years |
+| The program will calculate life expectancy on Earth | Input: 87 Years | Output: 87 Years |
+| The program will calculate life expectancy on Earth to life expectancy on Mercury | Input: 87 Years | Output: X Mercury Years |
+| The program will calculate life expectancy on Earth to life expectancy on Venus | Input: 87 Years | Output: X Venus Years |
+| The program will calculate life expectancy on Earth to life expectancy on Mars | Input: 87 Years | Output: X Mars Years|
+| The program will calculate life expectancy on Earth to life expectancy on Jupiter | Input: 87 Years | Output: X Jupiter Years |
+| The program will take average life expectancy, and return the number of years they have lived past the life expectancy. | Input: (87 years - 80 years) | Output: 7 years |
 
+### <span style="color:#74875d;">Functionality to be included in the Future:</span>
+
+* Return the date of a user’s next birthday on each planet.
+* Return your age in dog years on the all planets.
 
 
 ### <span style="color:#74875d;">License</span>
