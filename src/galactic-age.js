@@ -1,5 +1,5 @@
 class galacticAge {
-  constructor(age, expectancy, date1, date2) {
+  constructor(age, expectancy) {
     this.age = age;
     this.expectancy = 87;
     // this.date1 = new Date(date1);
@@ -52,7 +52,7 @@ class galacticAge {
   }
 
   expectancyAge(userAge){
-    const age = userAge;
+    let age = userAge;
     let leftToLive = this.expectancy - age;
     return leftToLive;
   }
