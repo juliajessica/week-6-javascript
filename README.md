@@ -69,9 +69,8 @@ _This project uses Webpack to bundle and minify the code. The test runner is Kar
     $ npm test
   ```
 
-
 ## <span style="color:#74875d;">Known Bugs</span>
-
+µ
 _Feel free to email me at [juliajessicasher@gmail.com](mailto:juliajessicasher@gmail.com) if you run into any issues or have questions, ideas or concerns. Please enjoy and feel free to share your opinion, constructive criticism, or comments of my work. :+1:_
 
 ## <span style="color:#74875d;">Technologies Used</span>
@@ -83,9 +82,6 @@ _Feel free to email me at [juliajessicasher@gmail.com](mailto:juliajessicasher@g
 | Karma & Jasmine | Popper
 | Babel-loader |  |
 | CSS-loader & Style-loader | | |
-
-
-
 
 ### <span style="color:#74875d;">Specs</span>
 | Behavior | Input | Output |

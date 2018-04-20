@@ -1,8 +1,10 @@
-// import { Name } from './../src/scripts.js';
-//
-// describe('name', function() {
-//
-//   it('should test whether a number matches another number', function() {
-//     expect(1).toEqual(1);
-//   });
-// });
+import { galacticAge } from './../src/galactic-age.js';
+
+describe('age', function() {
+
+  it('should return converted age from user into seconds', function() {
+    let age = 0;
+
+    expect(1).toEqual(1);
+  });
+});
