@@ -1,5 +1,5 @@
 class galacticAge {
-  constructor(age=0) {
+  constructor(age) {
     this.age = age;
   }
 
@@ -9,6 +9,11 @@ class galacticAge {
     return calculatedAge * 365 * 24 * 60 * 60;
   }
 
+  getSecondsDate(userDate) {
+    let convert = userDate;
+    let date = convert.
+    return date;
+  }
 
   // ageToSeconds.toFixed();
 } //closes class

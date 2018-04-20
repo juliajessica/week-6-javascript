@@ -87,8 +87,7 @@ _Feel free to email me at [juliajessicasher@gmail.com](mailto:juliajessicasher@g
 | Behavior | Input | Output |
 | :-------------     | :------------- | :------------- |
 | The program will return a person’s age | Input: 25 | Output: 25 |
-| The program will take a person’s age in years and convert it into seconds. | Input: 25 | Output: 7.884e+8 |
-| The program will return the seconds based on a selected date | Input: 06/07/1993 | Output: X Seconds |
+| The program will take a person’s age in years and convert it into seconds. | Input: 25 | Output: 788400000 |
 | The program will take two dates and determine the difference in seconds, between the two. | Input: 06/07/1993 and 06/07/2030 | Output: X Seconds |
 | The program will return the age of a human in Mercury years. | Input: 24 | Output: X Mercury Years |
 | The program will return the age of a human in Venus years | Input: 24 | Output: X Venus Years |
