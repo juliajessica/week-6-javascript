@@ -9,7 +9,8 @@ describe('galacticAge', function() {
 
   it('should return person’s age in years and convert it into seconds', function() {
     let testAge = new galacticAge(25);
-    let output = testAge.getSeconds(testAge.age);
+    let calculate = testAge.getSeconds(testAge.age);
+    let output = `You are ${calculate} seaconds old!`
     expect(output).toEqual(788400000);
   });
 

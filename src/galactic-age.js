@@ -2,22 +2,22 @@ class galacticAge {
   constructor(age, expectancy, date1, date2) {
     this.age = age;
     this.expectancy = 87;
-    this.date1 = new Date(date1);
-    this.date2 = new Date(date2);
+    // this.date1 = new Date(date1);
+    // this.date2 = new Date(date2);
     // this.planet = ["mercury", "venus", "mars"];
     // this.ageToDays = age * 365;
   }
 
-  getSecondsDate() {
-    // let date1 = str1.split('/');
-    let startDate = this.date1;
-    // let startDateNum = Date.parse(startDate);
-    let endDate = this.date2;
-    // let endDateNum = Date.parse(endDate);
-    let seconds = Math.abs((startDate.getTime() - endDate.getTime()) / 1000);
-    // let seconds = (startDate - endDate) / 1000;
-    return seconds;
-  }
+  // getSecondsDate() {
+  //   // let date1 = str1.split('/');
+  //   let startDate = this.date1;
+  //   // let startDateNum = Date.parse(startDate);
+  //   let endDate = this.date2;
+  //   // let endDateNum = Date.parse(endDate);
+  //   let seconds = Math.abs((startDate.getTime() - endDate.getTime()) / 1000);
+  //   // let seconds = (startDate - endDate) / 1000;
+  //   return seconds;
+  // }
 
 
 
