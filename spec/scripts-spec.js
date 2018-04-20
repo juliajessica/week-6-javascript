@@ -13,10 +13,16 @@ describe('galacticAge', function() {
     expect(output).toEqual(788400000);
   });
 
-  it('The program will return the age of a human in Mercury years.', function() {
-    let testAge = new galacticAge(12);
+  it('should return the age of a human in Mercury years.', function() {
+    let testAge = new galacticAge(24);
     let output = testAge.getAgeMercury(testAge.age);
-    expect(output).toEqual(49.77272727272727);
+    expect(output).toEqual(99.5454545455);
+  });
+
+  it('should return the age of a human in Venus years', function() {
+    let testAge = new galacticAge(24);
+    let output = testAge.getAgeMercury(testAge.age);
+    expect(output).toEqual(38.9333333333);
   });
 
   // it('should will take two dates and determine the difference in seconds between the two.', function() {

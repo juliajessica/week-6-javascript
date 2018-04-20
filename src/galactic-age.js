@@ -13,9 +13,22 @@ class galacticAge {
 
   getAgeMercury(userAge){
     let age = userAge * 365;
-    let mercuryAge = age / 88;
+    let mercuryAge = age / 88; //days
     return mercuryAge;
   }
+
+  getAgeVenus(userAge){
+    let age = userAge * 365;
+    let venusAge = age / 225; //days
+    return getAgeVenus;
+  }
+  //
+  // getAgeVenus(userAge){
+  //   let age = userAge * 365;
+  //   let mercuryAge = age / 225;//days
+  //   return mercuryAge;
+  // }
+
 
   // getSecondsDate(userDate1, userDate2) {
   //   let testDate1 = userDate1;
