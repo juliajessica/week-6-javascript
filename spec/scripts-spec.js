@@ -35,7 +35,7 @@ describe('galacticAge', function() {
   it('should return the age of a human in Mars years', function() {
     let testAge = new galacticAge(24);
     let output = testAge.getAgeJupiter(testAge.age);
-    expect(output).toEqual(742.372881356);
+    expect(output).toEqual(742.3728813559321);
   });
   // it('should will take two dates and determine the difference in seconds between the two.', function() {
   //   let testDate1 = new galacticAge(1993, 06, 07); //first date
