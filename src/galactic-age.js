@@ -29,6 +29,12 @@ class galacticAge {
     return marsAge;
   }
 
+  getAgeJupiter(userAge){
+    let age = userAge * 365;
+    let jupiterAge = age / 11.8;//days
+    return jupiterAge;
+  }
+
 
   // getSecondsDate(userDate1, userDate2) {
   //   let testDate1 = userDate1;
