@@ -1,5 +1,5 @@
 class galacticAge {
-  constructor(age, planet) {
+  constructor(age) {
     this.age = age;
     // this.planet = ["mercury", "venus", "mars"];
     // this.ageToDays = age * 365;
@@ -20,9 +20,9 @@ class galacticAge {
   getAgeVenus(userAge){
     let age = userAge * 365;
     let venusAge = age / 225; //days
-    return getAgeVenus;
+    return venusAge;
   }
-  //
+
   // getAgeVenus(userAge){
   //   let age = userAge * 365;
   //   let mercuryAge = age / 225;//days

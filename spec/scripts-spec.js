@@ -14,15 +14,16 @@ describe('galacticAge', function() {
   });
 
   it('should return the age of a human in Mercury years.', function() {
-    let testAge = new galacticAge(24);
+    let testAge = new galacticAge(25);
     let output = testAge.getAgeMercury(testAge.age);
-    expect(output).toEqual(99.5454545455);
+    // let output = convertAge.tofixed(9);
+    expect(output).toEqual(103.69318181818181);
   });
 
   it('should return the age of a human in Venus years', function() {
     let testAge = new galacticAge(24);
-    let output = testAge.getAgeMercury(testAge.age);
-    expect(output).toEqual(38.9333333333);
+    let output = testAge.getAgeVenus(testAge.age);
+    expect(output).toEqual(38.93333333333333);
   });
 
   // it('should will take two dates and determine the difference in seconds between the two.', function() {
