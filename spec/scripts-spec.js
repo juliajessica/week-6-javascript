@@ -1,10 +1,9 @@
 import { galacticAge } from './../src/galactic-age.js';
 
-describe('age', function() {
+describe('galacticAge', function() {
 
   it('should return converted age from user into seconds', function() {
-    let age = 0;
-
-    expect(1).toEqual(1);
+    let testAge = new galacticAge("25");
+    expect(testAge.age).toEqual("25");
   });
 });

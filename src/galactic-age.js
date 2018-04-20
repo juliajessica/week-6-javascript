@@ -3,12 +3,9 @@ class galacticAge {
     this.age = age;
   }
 
-  getSeconds(){
-    let age = this.age;
-    age.toFixed();
-  }
-}
-
-
+  // getSeconds(userAge) {
+  //   let ageToSeconds = userAge;
+  // } return ageToSeconds.toFixed();
+} //closes class
 
 export { galacticAge };
