@@ -54,42 +54,31 @@ class galacticAge {
     let leftToLive = this.lifeExpectancy - age;
     let convertToPositive = Math.abs(leftToLive);
     return convertToPositive;
-    }
+  }
 
   expectancyMercury(userAge){
     let age = userAge;
     let leftToLive = Math.round((this.lifeExpectancy - age) /.24); //mercury year
     return leftToLive;
-    }
+  }
 
   expectancyVenus(userAge){
     let age = userAge;
     let leftToLive = Math.round((this.lifeExpectancy - age) /.62); //venus year
     return leftToLive;
-    }
+  }
 
   expectancyMars(userAge){
     let age = userAge;
     let leftToLive = Math.round((this.lifeExpectancy - age) /1.88); //mars year
     return leftToLive;
-    }
+  }
 
   expectancyJupiter(userAge){
     let age = userAge;
     let leftToLive = Math.round((this.lifeExpectancy - age) /11.86); //jupiter year
     return leftToLive;
-    }
-
-  // getSecondsDate(userDate1, userDate2) {
-  //   let testDate1 = userDate1;
-  //   let testDate2 = userDate2;
-  //   let diff = testDate1.getTime() - testDate2.getTime();
-  //   let difference = diff / 1000;
-  //   let calculation = Math.abs(difference);
-  //   return calculation;
-  // }
-
-
+  }
 } //closes class
 
 export { galacticAge };
