@@ -54,7 +54,7 @@ describe('galacticAge', function() {
     let testAge = new galacticAge(25);
     let calculate = testAge.expectancyAge(testAge.year);
     let output = `This is your life expectancy on Earth: ${calculate}!`
-    expect(output).toEqual("This is your life expectancy on Earth: 62!");
+    expect(output).toEqual("This is your life expectancy on Earth: 56!");
   });
   // it('should will take two dates and determine the difference in seconds between the two.', function() {
   //   let testDate1 = new galacticAge(1993, 06, 07); //first date

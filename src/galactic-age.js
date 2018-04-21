@@ -1,7 +1,7 @@
 class galacticAge {
   constructor(year, expectancy) {
     this.year = year;
-    this.expectancy = 87;
+    this.lifeExpectancy = 81; //average
     // this.date1 = new Date(date1);
     // this.date2 = new Date(date2);
   }
@@ -17,7 +17,7 @@ class galacticAge {
   // }
 
   getSeconds() { //seconds in a year
-    let calculatedAge = this.year * 365.25 * 24 * 60 * 60;
+    const calculatedAge = this.year * 365.25 * 24 * 60 * 60;
     return calculatedAge;
   }
 
@@ -51,14 +51,14 @@ class galacticAge {
 
   expectancyAge(userAge){
     let age = userAge;
-    let leftToLive = 87 - age;
+    let leftToLive = this.lifeExpectancy - age;
     let convertToPositive = Math.abs(leftToLive);
     return convertToPositive;
     }
 
-  expectancyEarthVSMercury(userAge){
+  expectancyMercury(userAge){
     const age = userAge;
-    let leftToLive = 87 - age;
+    let leftToLive = this.lifeExpectancy - age;
     let convertToPositive = Math.abs(leftToLive);
     let ageToLiveMars = convertToPositive / 687;
     return convertToPositive;
