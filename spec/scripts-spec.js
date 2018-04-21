@@ -63,6 +63,13 @@ describe('galacticAge', function() {
     let output = `This is your life expectancy on Mercury: ${calculate}!`
     expect(output).toEqual("This is your life expectancy on Mercury: 233!");
   });
+
+  it('should calculate life expectancy on Earth to life expectancy on Venus', function() {
+    let testAge = new galacticAge(25);
+    let calculate = testAge.expectancyVenus(testAge.year);
+    let output = `This is your life expectancy on Venus: ${calculate}!`
+    expect(output).toEqual("This is your life expectancy on Venus: 90!");
+  });
   // it('should will take two dates and determine the difference in seconds between the two.', function() {
   //   let testDate1 = new galacticAge(1993, 06, 07); //first date
   //   let testDate2 = new galacticAge(2030, 06, 07); //second date
