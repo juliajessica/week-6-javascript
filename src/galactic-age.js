@@ -74,6 +74,12 @@ class galacticAge {
     return leftToLive;
     }
 
+  expectancyJupiter(userAge){
+    let age = userAge;
+    let leftToLive = Math.round((this.lifeExpectancy - age) /11.86); //jupiter year
+    return leftToLive;
+    }
+
   // getSecondsDate(userDate1, userDate2) {
   //   let testDate1 = userDate1;
   //   let testDate2 = userDate2;
