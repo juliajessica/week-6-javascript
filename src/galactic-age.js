@@ -1,5 +1,5 @@
 class galacticAge {
-  constructor(year, expectancy) {
+  constructor(year) {
     this.year = year;
     this.lifeExpectancy = 81; //average
     // this.date1 = new Date(date1);
@@ -23,7 +23,7 @@ class galacticAge {
 
   getAgeMercury(userAge){
     let age = userAge * 365.25;
-    let mercuryAge = age / 88;//days
+    let mercuryAge = age / 88; //days
     let calculate = mercuryAge.toFixed();
     return calculate;
   }
@@ -49,7 +49,7 @@ class galacticAge {
     return calculate;
   }
 
-  expectancyAge(userAge){
+  expectancyAge(userAge){ //on earth
     let age = userAge;
     let leftToLive = this.lifeExpectancy - age;
     let convertToPositive = Math.abs(leftToLive);
@@ -57,11 +57,9 @@ class galacticAge {
     }
 
   expectancyMercury(userAge){
-    const age = userAge;
-    let leftToLive = this.lifeExpectancy - age;
-    let convertToPositive = Math.abs(leftToLive);
-    let ageToLiveMars = convertToPositive / 687;
-    return convertToPositive;
+    let age = userAge;
+    let leftToLive = Math.round((this.lifeExpectancy - age) /.24); //mercury year
+    return leftToLive;
     }
 
   // getSecondsDate(userDate1, userDate2) {
