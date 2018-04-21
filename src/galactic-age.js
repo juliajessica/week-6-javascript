@@ -1,13 +1,10 @@
 class galacticAge {
-  constructor(age, expectancy) {
-    this.age = age;
+  constructor(year, expectancy) {
+    this.year = year;
     this.expectancy = 87;
     // this.date1 = new Date(date1);
     // this.date2 = new Date(date2);
-    // this.planet = ["mercury", "venus", "mars"];
-    // this.ageToDays = age * 365;
   }
-
   // getSecondsDate() {
   //   // let date1 = str1.split('/');
   //   let startDate = this.date1;
@@ -19,22 +16,20 @@ class galacticAge {
   //   return seconds;
   // }
 
-
-
-  getSeconds(userAge) { //seconds in a year
-    let ageToSeconds = userAge;
-    let calculatedAge = ageToSeconds;
-    return calculatedAge * 365 * 24 * 60 * 60;
+  getSeconds() { //seconds in a year
+    let calculatedAge = this.year * 365.25 * 24 * 60 * 60;
+    return calculatedAge;
   }
 
   getAgeMercury(userAge){
-    let age = userAge * 365;
-    let mercuryAge = age / 88; //days
-    return mercuryAge;
+    let age = userAge * 365.25;
+    let mercuryAge = age / 88;//days
+    let calculate = mercuryAge.toFixed();
+    return calculate;
   }
 
   getAgeVenus(userAge){
-    let age = userAge * 365;
+    let age = userAge * 365.25;
     let venusAge = age / 225; //days
     return venusAge;
   }
@@ -54,17 +49,17 @@ class galacticAge {
   expectancyAge(userAge){
     let age = userAge;
     let leftToLive = 87 - age;
-    let convertToPositiveNum = Math.abs(leftToLive);
-    return convertToPositiveNum;
+    let convertToPositive = Math.abs(leftToLive);
+    return convertToPositive;
     }
 
-  // expectancyEarth(userAge){
-  //   const age = userAge;
-  //   let leftToLive = age - this.expectancy;
-  //   if (leftToLive > 87){
-  //     return LeftToLive;
-  //   }
-  // }
+  expectancyEarthVSMercury(userAge){
+    const age = userAge;
+    let leftToLive = 87 - age;
+    let convertToPositive = Math.abs(leftToLive);
+    let ageToLiveMars = convertToPositive / 687;
+    return convertToPositive;
+    }
 
   // getSecondsDate(userDate1, userDate2) {
   //   let testDate1 = userDate1;

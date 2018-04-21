@@ -4,14 +4,14 @@ describe('galacticAge', function() {
 
   it('should return return a person’s age', function() {
     let testAge = new galacticAge(25);
-    expect(testAge.age).toEqual(25);
+    expect(testAge.year).toEqual(25);
   });
 
   it('should return person’s age in years and convert it into seconds', function() {
     let testAge = new galacticAge(25);
-    let calculate = testAge.getSeconds(testAge.age);
+    let calculate = testAge.getSeconds(testAge.year);
     let output = `You are ${calculate} seconds old!`
-    expect(output).toEqual("You are 788400000 seconds old!");
+    expect(output).toEqual("You are 788940000 seconds old!");
   });
 
   // it('should take two dates and determine the difference in seconds, between the two', function() {
@@ -23,36 +23,36 @@ describe('galacticAge', function() {
 
   it('should return the age of a human in Mercury years.', function() {
     let testAge = new galacticAge(25);
-    let calculate = testAge.getAgeMercury(testAge.age);
+    let calculate = testAge.getAgeMercury(testAge.year);
     let output = `On Mercury you are ${calculate} years old!`
     // let output = convertAge.tofixed(9);
-    expect(output).toEqual("On Mercury you are 103.69318181818181 years old!");
+    expect(output).toEqual("On Mercury you are 104 years old!");
   });
 
   it('should return the age of a human in Venus years', function() {
     let testAge = new galacticAge(25);
-    let calculate = testAge.getAgeVenus(testAge.age);
+    let calculate = testAge.getAgeVenus(testAge.year);
     let output = `On Venus you are ${calculate} years old!`
-    expect(output).toEqual("On Venus you are 40.55555555555556 years old!");
+    expect(output).toEqual("On Venus you are 40.583333333333336 years old!");
   });
 
   it('should return the age of a human in Mars years', function() {
     let testAge = new galacticAge(25);
-    let calculate = testAge.getAgeMars(testAge.age);
+    let calculate = testAge.getAgeMars(testAge.year);
     let output = `On Mars you are ${calculate} years old!`
     expect(output).toEqual("On Mars you are 13.282387190684133 years old!");
   });
 
   it('should return the age of a human in Jupiter years', function() {
     let testAge = new galacticAge(25);
-    let calculate = testAge.getAgeJupiter(testAge.age);
+    let calculate = testAge.getAgeJupiter(testAge.year);
     let output = `On Jupiter you are ${calculate} years old!`
     expect(output).toEqual("On Jupiter you are 773.3050847457627 years old!");
   });
 
   it('should calculate life expectancy on Earth', function() {
     let testAge = new galacticAge(25);
-    let calculate = testAge.expectancyAge(testAge.age);
+    let calculate = testAge.expectancyAge(testAge.year);
     let output = `This is your life expectancy on Earth: ${calculate}!`
     expect(output).toEqual("This is your life expectancy on Earth: 62!");
   });
