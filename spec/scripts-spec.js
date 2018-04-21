@@ -33,21 +33,21 @@ describe('galacticAge', function() {
     let testAge = new galacticAge(25);
     let calculate = testAge.getAgeVenus(testAge.year);
     let output = `On Venus you are ${calculate} years old!`
-    expect(output).toEqual("On Venus you are 40.583333333333336 years old!");
+    expect(output).toEqual("On Venus you are 41 years old!");
   });
 
   it('should return the age of a human in Mars years', function() {
     let testAge = new galacticAge(25);
     let calculate = testAge.getAgeMars(testAge.year);
     let output = `On Mars you are ${calculate} years old!`
-    expect(output).toEqual("On Mars you are 13.282387190684133 years old!");
+    expect(output).toEqual("On Mars you are 13 years old!");
   });
 
   it('should return the age of a human in Jupiter years', function() {
     let testAge = new galacticAge(25);
     let calculate = testAge.getAgeJupiter(testAge.year);
     let output = `On Jupiter you are ${calculate} years old!`
-    expect(output).toEqual("On Jupiter you are 773.3050847457627 years old!");
+    expect(output).toEqual("On Jupiter you are 774 years old!");
   });
 
   it('should calculate life expectancy on Earth', function() {

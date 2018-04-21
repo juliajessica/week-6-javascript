@@ -31,19 +31,22 @@ class galacticAge {
   getAgeVenus(userAge){
     let age = userAge * 365.25;
     let venusAge = age / 225; //days
-    return venusAge;
+    let calculate = venusAge.toFixed();
+    return calculate;
   }
 
   getAgeMars(userAge){
-    let age = userAge * 365;
+    let age = userAge * 365.25;
     let marsAge = age / 687;//days
-    return marsAge;
+    let calculate = marsAge.toFixed();
+    return calculate;
   }
 
   getAgeJupiter(userAge){
-    let age = userAge * 365;
+    let age = userAge * 365.25;
     let jupiterAge = age / 11.8;//days
-    return jupiterAge;
+    let calculate = jupiterAge.toFixed();
+    return calculate;
   }
 
   expectancyAge(userAge){
