@@ -53,9 +53,10 @@ class galacticAge {
 
   expectancyAge(userAge){
     let age = userAge;
-    let leftToLive = this.expectancy - age;
-    return leftToLive;
-  }
+    let leftToLive = 87 - age;
+    let convertToPositiveNum = Math.abs(leftToLive);
+    return convertToPositiveNum;
+    }
 
   // expectancyEarth(userAge){
   //   const age = userAge;
